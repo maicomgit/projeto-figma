@@ -1,0 +1,266 @@
+:root{
+     --color-modoNoturno:#3a3a3a
+}
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none;
+}
+
+body {
+     width: 100vw;
+     height: 100vh;
+     overflow-x: hidden;
+     color: #8C8888;
+}
+/* modo noturno  */
+.dark, .sectionCards .dark, section .dark, .divQuemSomos .dark, .QuemSomosImg .dark{
+     background-color: var(--color-modoNoturno);
+}
+footer div p.fonteClara{
+     color: white;
+}
+
+.fonteClara{
+     color: white;
+}
+
+.textReceitas2 .fonteClara{
+     color: white;
+}
+/* ================================== */
+header {
+     width: 90%;
+     margin: 0 auto;
+     height: 69px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+#escuroClaro{
+     width: 30px;
+}
+
+nav ul {
+     gap: 10px;
+     display: flex;
+}
+
+
+.imgPrincipal {
+     width: 100vw;
+     height: 850px;
+     object-fit: cover;
+}
+
+.receitas {
+     text-align: center;
+     padding: 40px 0;
+}
+
+.textReceitas {
+     font-family: 'Pacifico', cursive;
+     color: red;
+     font-size: 2rem;
+}
+
+.textReceitas2 {
+     font-family: 'Roboto', sans-serif;
+     padding: 10px 0;
+}
+
+section {
+     width: 100%;
+     height: auto;
+     background-color: #E5E5E5;
+}
+
+.sectionCards {
+     width: 70%;
+     margin: 0 auto;
+     height: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 70px;
+     justify-content: center;
+     padding: 70px 0;
+}
+
+.cards {
+     width: 286px;
+     height: 384px;
+     background-color: white;
+     border-radius: 8px;
+}
+
+.cardsImg {
+     width: 100%;
+     height: 50%;
+     border-radius: 8px;
+
+}
+
+.cardsImg img {
+     border-radius: 8px 8px 0px 0;
+
+}
+
+.cardsText {
+     width: 100%;
+     height: 40%;
+}
+
+.divQuemSomos {
+     width: 100%;
+     text-align: center;
+}
+
+.QuemSomosImg {
+     width: 70%;
+     height: auto;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.imgQuem {
+     height: 300px;
+     width: 200px;
+}
+
+.imagem {
+     width: 100%;
+     height: 70%;
+     border-radius: 50%;
+}
+
+.imagem img {
+     width: 100%;
+     border-radius: 50%;
+}
+
+footer {
+     width: 100%;
+     height: 49px;
+     display: flex;
+     align-items: center;
+     justify-content: end;
+
+}
+
+footer img {
+     width: 30px;
+}
+
+footer div {
+     margin-right: 30px;
+     align-items: center;
+     display: flex;
+     color: rgb(0, 0, 0);
+     gap: 2px;
+     position: fixed;
+     bottom: 10px;
+     right: 0px;
+}
+
+.cardsText p {
+     color: black;
+     margin: 15px 0;
+     font-family: 'Roboto', sans-serif;
+}
+
+.cardsText div {
+     width: 70%;
+     margin: 0 auto;
+}
+
+h3 {
+     color: black;
+     font-family: 'Roboto', sans-serif;
+}
+/* boatao ver receita */
+.buttonVerReceita {
+     background-color: #8D0606;
+     color: white;
+     border: none;
+     padding: 8px;
+     width: 115px;
+     border-radius: 5px;
+     font-size: 18px;
+     margin-top: 10px;
+}
+
+.glow-on-hover {
+     width: 115px;
+     border: none;
+     outline: none;
+     color: #fff;
+     background: #111;
+     cursor: pointer;
+     position: relative;
+     z-index: 0;
+     border-radius: 10px;
+     font-size: 18px;
+     margin-top: 10px;
+     padding: 8px;
+}
+
+.glow-on-hover:before {
+     content: '';
+     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+     position: absolute;
+     top: -2px;
+     left: -2px;
+     background-size: 400%;
+     z-index: -1;
+     filter: blur(5px);
+     width: calc(100% + 4px);
+     height: calc(100% + 4px);
+     animation: glowing 20s linear infinite;
+     opacity: 0;
+     transition: opacity .3s ease-in-out;
+     border-radius: 10px;
+}
+
+.glow-on-hover:active {
+     color: rgb(214, 214, 214)
+}
+
+.glow-on-hover:active:after {
+     background: transparent;
+}
+
+.glow-on-hover:hover:before {
+     opacity: 1;
+}
+
+.glow-on-hover:after {
+     z-index: -1;
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: #8D0606;
+     left: 0;
+     top: 0;
+     border-radius: 10px;
+}
+
+@keyframes glowing {
+     0% {
+          background-position: 0 0;
+     }
+
+     50% {
+          background-position: 400% 0;
+     }
+
+     100% {
+          background-position: 0 0;
+     }
+}
+/* =========================================== */
